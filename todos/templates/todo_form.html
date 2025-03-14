@@ -1,0 +1,9 @@
+<a href= "{% url 'todo list' %}"> Voltar</a>
+
+<h1>Nova Tarefa</h1>
+    <form method= "POST">
+    {% csrf_token %}
+    {{form}}
+    
+    <button type="submit">Salvar</button>
+    </form>
